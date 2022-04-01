@@ -402,10 +402,11 @@ main {
 .hero-text {
     text-justify: left;
     max-width: 600px;
+    line-height: 5rem;
 }
 
 .hero-subtext {
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .hero-image {
@@ -453,19 +454,17 @@ svg {
 .about-me-container {
     background: var(--clr-white);
     width: 100%;
-    padding: 7rem 5rem 8rem 5rem;
+    padding: 7rem 2rem 8rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     align-items: center;
     gap: 1rem;
 }
 
 .about-me-text {
-    max-width: 80%;
+    max-width: 100%;
     text-align: center;
-    line-height: 200%;
 }
 
 .cw-img-container {
@@ -547,7 +546,7 @@ svg {
 
 .experience-container {
     min-width: 80%;
-    padding: 7rem 5rem 8rem 5rem;
+    padding: 7rem 2rem 8rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -577,6 +576,8 @@ svg {
 .btn-container {
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
 }
 
@@ -666,7 +667,6 @@ svg {
 .contact-content {
     width: 80%;
     text-align: center;
-    line-height: 200%;
 }
 
 .email-button {
@@ -717,4 +717,67 @@ footer {
 .footer-img {
     max-width: 25px;
     border-radius: 50%;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1175px) {
+    .hero {
+        padding: 7rem 1rem 5rem 1rem;
+        gap: 2rem;
+    }
+
+    .hero, h1 {
+        font-size: 48px;
+    }
+    
+    .hero-text {
+        line-height: 125%;
+    }
+    
+    .hero-subtext {
+        font-size: 24px;
+    }
+    
+    .hero-image {
+        max-width: 400px;
+    }
+
+    .content-container {
+        max-width: 90%;
+    }
+}
+  
+@media screen and (max-width: 765px) {
+    .hero {
+        padding: 7rem 1rem 5rem 1rem;
+        gap: 2rem;
+    }
+
+    .hero, h1 {
+        font-size: 36px;
+    }
+    
+    .hero-text {
+        line-height: 125%;
+    }
+    
+    .hero-subtext {
+        font-size: 24px;
+    }
+    
+    .hero-image {
+        max-width: 300px;
+    }
+
+    .btn {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content-container {
+        max-width: 90%;
+    }
 }
